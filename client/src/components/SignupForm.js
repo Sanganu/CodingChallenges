@@ -74,7 +74,7 @@ class SignupForm extends Component {
 					value={this.state.password}
 					onChange={this.handleChange}
 				/>
-				<label htmlFor="confirmPassword">Confirm Password: </label>
+				<label htmlFor= "confirmPassword">Confirm Password: </label>
 				<input
 					type="password"
 					name="confirmPassword"
