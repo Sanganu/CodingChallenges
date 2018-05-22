@@ -10,7 +10,7 @@ const App = props => {
    return(<Router>
        <Switch>
              <Route exact path = "/" render={() => <div>
-                  <SignupForm /> 
+                  <SignupForm />
                   <LoginForm />
                   <Logout />
                 </div>} />

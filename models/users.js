@@ -18,7 +18,11 @@ const userSchema = new Schema({
 		password: {
 			type: String,
 			required: true
-		}
+		},
+    gameId : {
+      type: Schema.Types.ObjectId
+    }
+    
 });
 
 // Define userSchema

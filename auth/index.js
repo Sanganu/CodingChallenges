@@ -1,4 +1,4 @@
-const express = require('express')
+ const express = require('express')
 const router = express.Router()
 const User = require('../models/users')
 const passport = require('../passport')
@@ -28,11 +28,12 @@ router.post(
 	function(req, res, next) {
 		console.log(req.body)
 		console.log('================')
-		next()
+		//next()
+		res.json({ user: "INvalid Credentials"})
 	},
 	passport.authenticate('local'),
 	(req, res) => {
-		console.log('POST to /login')
+		console.log('POST to /login - passport.authenticate callback')
 		const user = JSON.parse(JSON.stringify(req.user)) // hack
 		const cleanUser = Object.assign({}, user)
 		if (cleanUser) {
