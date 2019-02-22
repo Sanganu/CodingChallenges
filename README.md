@@ -1,4 +1,4 @@
 # ProjectLogin
 
-This Repo to understand and implement different Strategies of passport.js
+This Repo is for Passport - Local strategy.
 - Local => Implemented and working
